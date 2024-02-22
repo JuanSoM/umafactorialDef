@@ -1,0 +1,211 @@
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos (master)
+$ git init => inicializo el repositorio en Documentos
+Reinitialized existing Git repository in C:/Users/jismb/OneDrive/Documentos/.git/
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos (master)
+$ git clone https://github.com/JuanSoM/umafactorial1.git => clonamos nuestro repositorio de github a nuestro workspace
+Cloning into 'umafactorialDef'...
+warning: You appear to have cloned an empty repository.
+
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (main)
+$ git checkout -b master => como me he metido dentro del repositorio que había clonado y este solo tenia la rama main, creo una rama master
+Switched to a new branch 'master'
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git add factorial.java => añado los cambios realizados al staging area
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git commit -m "implementacion inicial" => con este comando confirmo que quiero enviar esta información al repositorio remoto
+[master (root-commit) 7ce16d4] implementacion inicial
+ 1 file changed, 14 insertions(+)
+ create mode 100644 factorial.java
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git add factorial.java => la funcion del comando esta explicada anteriormente
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git commit -m "refactorizacion" => la funcion del comando esta explicada anteriormente
+[master c6942e4] refactorizacion
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git push origin master => con este comando envío al repositorio remoto lo último que se había guardado con el último commit
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 710 bytes | 710.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/JuanSoM/umafactorialDef.git
+ * [new branch]      master -> master
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git checkout -b recursivo => creamos una nueva rama 'recursivo'
+Switched to a new branch 'recursivo'
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (recursivo)
+$ git add factorial.java =>la funcion del comando esta explicada anteriormente
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (recursivo)
+$ git commit -m "implementacion recursiva"=>la funcion del comando esta explicada anteriormente
+[recursivo 0673e54] implementacion recursiva
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (recursivo)
+$ git push origin recursivo => con este comando envío la info del último commit de la rama recursivo al repositorio remoto
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 345 bytes | 345.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'recursivo' on GitHub by visiting:
+remote:      https://github.com/JuanSoM/umafactorialDef/pull/new/recursivo
+remote:
+To https://github.com/JuanSoM/umafactorialDef.git
+ * [new branch]      recursivo -> recursivo
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (recursivo)
+$ git checkout master => cambio a la rama master
+Switched to branch 'master'
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git add factorial.java => la funcion del comando esta explicada anteriormente
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git commit -m "correccion numeros negativos" =>la funcion del comando esta explicada anteriormente
+[master db97b53] correccion numeros negativos
+ 1 file changed, 5 insertions(+)
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git push origin master => con este comando envío al repositorio remoto lo último que se había guardado con el último commit de la rama master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 367 bytes | 367.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/JuanSoM/umafactorialDef.git
+   c6942e4..db97b53  master -> master
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git checkout recursivo => cambio a la rama recursivo
+Switched to branch 'recursivo'
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (recursivo)
+$ git add factorial.java => la funcion del comando esta explicada anteriormente
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (recursivo)
+$ git commit -m "optimizacion" => la funcion del comando esta explicada anteriormente
+[recursivo 90adda9] optimizacion
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (recursivo)
+$ git checkout master => cambio a la rama master
+Switched to branch 'master'
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git merge recursivo => una vez que he cambiado a la rama master, lo que hago con este comando es mezclar el último código al que le hayamos hecho commit en master y recursivo
+Auto-merging factorial.java
+Merge made by the 'ort' strategy.
+ factorial.java | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git checkout -b refacIO => creamos la rama refacIO
+Switched to a new branch 'refacIO'
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (refacIO)
+$ git add factorial.java => la funcion del comando esta explicada anteriormente
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (refacIO)
+$ git commit -m "refactorizacion de metodo de entrada" => la funcion del comando esta explicada anteriormente
+[refacIO 8f9f30c] refactorizacion de metodo de entrada
+ 1 file changed, 17 insertions(+), 13 deletions(-)
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (refacIO)
+$ git stash => hacemos un guardado temporal del código para que no perdamos los cambios del código
+Saved working directory and index state WIP on refacIO: 8f9f30c refactorizacion de metodo de entrada
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (refacIO)
+$ git checkout master => cambio a la rama master
+Switched to branch 'master'
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git add factorial.java => la funcion del comando esta explicada anteriormente
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git commit -m "cambio de long a BigInteger" => la funcion del comando esta explicada anteriormente
+[master 2738b36] cambio de long a BigInteger
+ 1 file changed, 21 insertions(+), 19 deletions(-)
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git push origin master => subimos al repo remoto lo que hayamos hecho en master 
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 1.18 KiB | 602.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/JuanSoM/umafactorialDef.git
+   db97b53..2738b36  master -> master
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git checkout refacIO => cambio a la rama refacIO
+Switched to branch 'refacIO'
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (refacIO)
+$ git stash pop => ponemos esta línea de código para que nos aparezca lo que teníamos guardado del código de esta rama con git stash
+On branch refacIO
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   factorial.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (087290c0506f5cf5f2ac5f45bc7600a0cc9431dd)
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (refacIO)
+$ git add factorial.java => la funcion del comando esta explicada anteriormente
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (refacIO)
+$ git commit -m "refactorizacion de metodo de salida" => la funcion del comando esta explicada anteriormente
+[refacIO b9ad4a4] refactorizacion de metodo de salida
+ 1 file changed, 12 insertions(+), 9 deletions(-)
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (refacIO)
+$ git checkout master => cambio a la rama master
+Switched to branch 'master'
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git merge refacIO => mezclamos lo que había en refacIO con master
+Auto-merging factorial.java
+CONFLICT (content): Merge conflict in factorial.java
+Automatic merge failed; fix conflicts and then commit the result.
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master|MERGING)
+$ git add factorial.java => la funcion del comando esta explicada anteriormente
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master|MERGING)
+$ git commit -m "mezcla de rama refacIO" => la funcion del comando esta explicada anteriormente
+[master 416fc0b] mezcla de rama refacIO
+
+jismb@LAPTOP-HA523C2U MINGW64 ~/OneDrive/Documentos/umafactorialDef (master)
+$ git push origin master => lo subimos lo que hayamos último que hayamos hecho en la rama main al repositorio
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 1.14 KiB | 585.00 KiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/JuanSoM/umafactorialDef.git
+   2738b36..416fc0b  master -> master
+
+
